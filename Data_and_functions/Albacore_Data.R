@@ -1,3 +1,12 @@
+
+# ———————————————————————————————
+# Prior predictive checks for the SSPM and ASPM by Kyuhan Kim
+# Copyright © 2023 Kyuhan Kim. All rights reserved.
+# Contact: kh2064@gmail.com for questions
+# MIT License: https://opensource.org/licenses/MIT
+# ———————————————————————————————
+
+
 ## South Atlantic Albacore Tuna  from Polacheck et al., 1993
 ## Fitting Surplus Production Models: Comparing Methods and Measuring Uncertainty
 years=1967:1989

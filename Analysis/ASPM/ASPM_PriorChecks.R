@@ -1,4 +1,13 @@
 
+
+# ———————————————————————————————
+# Prior predictive checks for the SSPM and ASPM by Kyuhan Kim
+# Copyright © 2023 Kyuhan Kim. All rights reserved.
+# Contact: kh2064@gmail.com for questions
+# MIT License: https://opensource.org/licenses/MIT
+# ———————————————————————————————
+
+
 ##########################################################################################################################################################
 ################################################### SBC (parameter values are drawn from a joint prior) ###################################################
 ##########################################################################################################################################################
@@ -79,6 +88,15 @@ FixedMPriors=list("transMh"=list(PriorMu_transMh, PriorSigma_transMh),
 
 PriorMu_transMh=c(log(ParsTrueVals["M"]), bounded_logit(ParsTrueVals["h"], 0.2, 1))
 PriorSigma_transMh=c(lnSigmaFromCV(0.5), 0.5) 
+
+# ———————————————————————————————
+# Prior predictive checks for the SSPM and ASPM by Kyuhan Kim
+# Copyright © 2023 Kyuhan Kim. All rights reserved.
+# Contact: kh2064@gmail.com for questions
+# MIT License: https://opensource.org/licenses/MIT
+# ———————————————————————————————
+
+
 
 tau2Prior=c(1/(0.5^2)+2,  0.00806*(1/(0.5^2)+2+1))
 qPrior=c(1e-3, 1)

@@ -1,3 +1,12 @@
+
+# ———————————————————————————————
+# Prior predictive checks for the SSPM and ASPM by Kyuhan Kim
+# Copyright © 2023 Kyuhan Kim. All rights reserved.
+# Contact: kh2064@gmail.com for questions
+# MIT License: https://opensource.org/licenses/MIT
+# ———————————————————————————————
+
+
 cat('\n\n Setup begins \n\n')  
 
 #############
@@ -21,6 +30,13 @@ library(posterior)
 source("../../Data_and_functions/Albacore_Data.R")
 source("../../Data_and_functions/Global_functions.R")
 source("../../Data_and_functions/SSPM_functions.R")
+
+# ———————————————————————————————
+# Prior predictive checks for the SSPM and ASPM by Kyuhan Kim
+# Copyright © 2023 Kyuhan Kim. All rights reserved.
+# Contact: kh2064@gmail.com for questions
+# MIT License: https://opensource.org/licenses/MIT
+# ———————————————————————————————
 
 
 ##################################
