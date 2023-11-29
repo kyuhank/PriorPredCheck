@@ -1,0 +1,4 @@
+docker: dragonflyscience/sharknado:2023-06-18
+memory: 16
+cpus: 16
+allows: ["Prior-checks-output", "Prior-checks-ms"]
