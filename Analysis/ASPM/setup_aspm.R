@@ -4,18 +4,6 @@ cat('\n\n Setup begins \n\n')
 ## library ##
 #############
 
-capture.output(if (!interactive()) {
-  
-  install.packages('../../cmdstanr-0.5.2.tar.gz', repos=NULL)
-  source('../../installcmdstan.R')
-  require(cmdstanr)
-  install_cmdst(dir = '../../', cores = 8)
-  cmdstanr::set_cmdstan_path("./cmdstan-2.29.2")
-  
-  LocalRun=0
-  
-}, file=nullfile())
-
 library(posterior)
 library(reshape2)
 library(ggplot2)
@@ -41,16 +29,16 @@ source("../../Data_and_functions/ASPM_functions.R")
 
 if (!interactive()) {
   
-  nSimBoot <- as.integer(Sys.getenv("nSimBoot", 5))
-  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 5))
+  nSimBoot <- as.integer(Sys.getenv("nSimBoot", 200))
+  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 200))
   
   ## mcmc sampling option ##
-  nChains <- as.integer(Sys.getenv("nChains", 6))
+  nChains <- as.integer(Sys.getenv("nChains", 8))
   nWarmup <- as.integer(Sys.getenv("nWarmup", 1000))
   nSample <- as.integer(Sys.getenv("nSample", 1000))
   
-  nWarmupDemon <- as.integer(Sys.getenv("nWarmupDemon", 1000))
-  nSampleDemon <- as.integer(Sys.getenv("nSampleDemon", 1000))
+  nWarmupDemon <- as.integer(Sys.getenv("nWarmupDemon", 5000))
+  nSampleDemon <- as.integer(Sys.getenv("nSampleDemon", 5000))
   
 }
 

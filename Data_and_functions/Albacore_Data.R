@@ -49,17 +49,6 @@ h=0.85
 tau2=log(0.1^2 + 1) ## CV=0.1
 
 
-
 ## R0
 B0PriorFromPunt=c(80, 300)
-
-
-
-#sels=selectivity_at_age(a_sel=a_sel, nages=nages, sig_sel=sig_sel)
-#eqSur=eqSurvRate(M=M, nages=nages)
-#LengthAtAge=length_at_age(kappa=kappa, Linf=Linf, a0=a0, nages=nages)
-#weights=weight_at_age(lwa=lwa, lwb=lwb, length_a=LengthAtAge)
-
-#lowR0=80/sum(eqSur*sels*weights)
-#upR0=300/sum(eqSur*sels*weights)
 
