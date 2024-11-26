@@ -46,7 +46,7 @@ source("../../Data_and_functions/SSPM_functions.R")
 if (!interactive()) {
   
   nSimBoot <- as.integer(Sys.getenv("nSimBoot", 500))
-  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 1500))
+  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 1000))
   
   ## mcmc sampling option ##
   nChains <- as.integer(Sys.getenv("nChains", 8))

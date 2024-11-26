@@ -39,16 +39,16 @@ source("../../Data_and_functions/ASPM_functions.R")
 
 if (!interactive()) {
   
-  nSimBoot <- as.integer(Sys.getenv("nSimBoot", 200))
-  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 200))
+  nSimBoot <- as.integer(Sys.getenv("nSimBoot", 300))
+  nSimSBC <- as.integer(Sys.getenv("nSimSBC", 500))
   
   ## mcmc sampling option ##
   nChains <- as.integer(Sys.getenv("nChains", 8))
   nWarmup <- as.integer(Sys.getenv("nWarmup", 1000))
   nSample <- as.integer(Sys.getenv("nSample", 1000))
   
-  nWarmupDemon <- as.integer(Sys.getenv("nWarmupDemon", 5000))
-  nSampleDemon <- as.integer(Sys.getenv("nSampleDemon", 5000))
+  nWarmupDemon <- as.integer(Sys.getenv("nWarmupDemon", 2000))
+  nSampleDemon <- as.integer(Sys.getenv("nSampleDemon", 3000))
   
 }
 

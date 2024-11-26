@@ -11,7 +11,7 @@
 ## compile the model and mcmc options ##
 ########################################
 
-SSPM <- cmdstanr::cmdstan_model('../../Models/SSPM/SSPM.stan',
+SSPM <- cmdstanr::cmdstan_model('../../src/SSPM/SSPM.stan',
                                 pedantic=F, 
                                 force_recompile=F)
 
@@ -148,7 +148,7 @@ MvnPost=as_draws_matrix(MvnModel$draws())
 ## compile the model and mcmc options ##
 ########################################
 
-SSPM_explicit_flat <- cmdstanr::cmdstan_model('../../Models/SSPM/SSPM_explicit_Flat.stan',
+SSPM_explicit_flat <- cmdstanr::cmdstan_model('../../src/SSPM/SSPM_explicit_Flat.stan',
                                               pedantic=F, 
                                               force_recompile=F)
 
@@ -230,7 +230,7 @@ ExplicitModel_flatPost=as_draws_matrix(ExplicitModel_flat$draws())
 ## compile the model and mcmc options ##
 ########################################
 
-SSPM_explicit_inform <- cmdstanr::cmdstan_model('../../Models/SSPM/SSPM_explicit_Flat.stan',
+SSPM_explicit_inform <- cmdstanr::cmdstan_model('../../src/SSPM/SSPM_explicit_Flat.stan',
                                                 pedantic=F, 
                                                 force_recompile=F)
 

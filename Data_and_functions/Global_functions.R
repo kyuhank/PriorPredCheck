@@ -188,7 +188,7 @@ SBC=function(StanObj,
   
   diagnostic=bind_rows(diagnostic, .id="SimIter")
   
-  diagnoPass=unlist(diagnostic[,2])==0 & apply(diagnostic[,-c(1:3)], 1, function(x) all(x<1.05) ) 
+  diagnoPass=unlist(diagnostic[,2])==0 & apply(diagnostic[,-c(1:3)], 1, function(x) all(x<1.01) ) 
   diagnoPass[is.na(diagnoPass)]=T
   
   TailEffPass=apply(TailEffSamples, 1, function(x) all(x>TailMinEffSamp))

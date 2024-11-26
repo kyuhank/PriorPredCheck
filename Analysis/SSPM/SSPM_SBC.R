@@ -12,7 +12,7 @@
 ## compile the model and mcmc options ##
 ########################################
 
-SSPM <- cmdstanr::cmdstan_model('../../Models/SSPM/SSPM.stan',
+SSPM <- cmdstanr::cmdstan_model('../../src/SSPM/SSPM.stan',
                                 pedantic=F, 
                                 force_recompile=F)
 
@@ -23,7 +23,7 @@ seed=12345
 nchains=nChains
 nwarmup=nWarmup
 nsample=nSample
-adaptDelta=0.999
+adaptDelta=0.99
 maxTree=10
 
 nsim=nSimSBC

@@ -10,7 +10,7 @@
 ## compile the model and mcmc options ##
 ########################################
 
-ASPM <- cmdstanr::cmdstan_model('../../Models/ASPM/Main/main.stan',
+ASPM <- cmdstanr::cmdstan_model('../../src/ASPM/Main/main.stan',
                                 pedantic=F, 
                                 force_recompile=F)
 
