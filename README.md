@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/724994045.svg)](https://doi.org/10.5281/zenodo.14219977)
+
 This repository contains the code and data for the paper:
 
 # Examining potential biases through prior predictive checks: Prior mis-specifications and their impact on Bayesian stock assessments
