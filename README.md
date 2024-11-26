@@ -1,5 +1,3 @@
-# PriorPredCheck
-
 This repository contains the code and data for the paper:
 
 **Examining potential biases through prior predictive checks: Prior mis-specifications and their impact on Bayesian stock assessments**
@@ -8,41 +6,34 @@ This repository contains the code and data for the paper:
 
 # Abstract
 
-Bayesian stock assessment models are widely used to assess the status
-of fish stocks and provide management advice. The Bayesian approach
-allows for incorporating prior information into assessment models to
-improve the precision of estimates and to constrain otherwise
-over-parameterised models towards a solution that is aligned with
-expectations for specific parameters. A prior distribution is specified
-based on specific prior information or expert opinion, and a likelihood
-function is used to update the prior to yield a posterior distribution
-based on observed data. Understanding how the joint prior, defined
-over estimated model parameters, interacts with
-the model likelihood is essential for robust Bayesian
-inference. However, Bayesian stock assessments often neglect this
-important aspect of Bayesian inference. Depending on the model
-structural assumptions and parameterisations, different prior
-mis-specification problems can arise, which give rise to
-well-documented problems. In this study, we show two common
-prior mis-specifications, using three different illustrative stock
-assessment models of increasing complexity applied to the South Atlantic albacore tuna
-stock. The first mis-specification is an inconsistency between the prior and
-likelihood function associated with an implicit change of the
-prior, brought about by the model structure to avoid negative biomass calculations. The
-second mis-specififcation arises from the use of uniform priors with
-constrained support on harvest rates or
-population scale parameters. Despite their intended lack of
-information, these priors
-are strongly informative for output space of a
-model, regardless of model parameterisation. Our simulation studies demonstrate that failing to account for
-the implications of these problems in a likelihood function can lead
-to misleading inference. We also show that such misleading inference
-can be avoided if prior information is encoded based on the prior
-predictive distributions of quantities that are directly linked to the
-likelihood function. To avoid potential prior
-mis-informed inference in Bayesian stock assessments, we recommend
-that prior predictive checks should be routinely used to understand
-(and correct) potentially unintended interactions between the likelihood and the implicit information contained in joint priors for stock assessments.
+Bayesian stock assessment models are widely used to evaluate fish
+stock status and inform management decisions. The Bayesian approach
+enables the incorporation of prior information into assessment models,
+improving estimate precision and constraining over-parameterised
+models toward solutions that align with prior expectations. Understanding
+the interaction between joint priors across model parameters and the model likelihood is
+crucial for robust Bayesian inference, yet this aspect is seldom
+addressed in applied Bayesian stock assessments. Depending on the model,
+structural assumptions, and parameterisations, various prior
+mis-specification issues may emerge, leading to well-documented
+problems. In this study, we present two common prior
+mis-specifications using three stock assessment models of increasing
+complexity applied to South Atlantic albacore tuna data. The first
+mis-specification stems from an inconsistency between the prior and
+likelihood function, where the model structure implicitly modifies the
+prior to avoid negative biomass calculations. The second
+mis-specification involves uniform priors with constrained support on
+parameters like harvest rates or population scale, which, despite
+their intended non-informativeness, are highly informative for derived
+quantities from the model. Simulations show that failing to address these
+issues in the likelihood function can result in misleading
+inference. We demonstrate that such issues can be mitigated by
+carefully encoding prior information with the help from prior predictive distributions of
+quantities directly linked to the likelihood function. To prevent
+potentially misinformed inference in Bayesian stock assessments, we
+recommend routinely conducting prior predictive checks to identify and
+correct unintended interactions between the likelihood and implicit
+information in joint priors.
 
 
 # How to run the code
@@ -56,7 +47,4 @@ that prior predictive checks should be routinely used to understand
    i. `SSPM`
    ii. `ASPM`
 
-
-
-
-
+*Running this entire process on a single laptop might take several days to complete due to the hundreds of simulations and estimation processes involved in the self-consistency check*
