@@ -1,6 +1,6 @@
 This repository contains the code and data for the paper:
 
-**Examining potential biases through prior predictive checks: Prior mis-specifications and their impact on Bayesian stock assessments**
+# Examining potential biases through prior predictive checks: Prior mis-specifications and their impact on Bayesian stock assessments
 
 *Kyuhan Kim, and Philipp Neubauer*
 
